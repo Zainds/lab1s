@@ -8,13 +8,14 @@ public class Main2 {
         }
         return fact;
     }
+
     public static void main(String[] args){
 
         double result, x, accuracy;
 
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter argument"); x = in.nextInt();
-        System.out.println("Enter accurecy"); accuracy = in.nextInt();
+        System.out.println("Enter argument"); x = in.nextDouble();
+        System.out.println("Enter accurecy"); accuracy = in.nextDouble();
         result = 0;
         for (int i = 0; i < accuracy; i++){
             result += (Math.pow(-1, i) * Math.pow(x, i)) / factorial(i);
@@ -22,6 +23,7 @@ public class Main2 {
 
         System.out.println(result);
         System.out.println(Math.pow(Math.E, -x));
+
     }
 }
 //
